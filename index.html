@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ScalaJS PouchDB Todo</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 12px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            font-size: 13px;
+            line-height: 20px;
+            margin: auto;
+        }
+
+        textarea {
+          border :  1px solid #eee;
+            outline: none;
+        }
+
+        textarea:focus
+        {
+            border: 1px solid #ffefcc;
+        }
+        .todoapp {
+            display : -webkit-box;
+            display : -webkit-flex;
+            display : -ms-flexbox;
+            display : flex;
+            -webkit-box-pack : center;
+            -webkit-justify-content : center;
+            -ms-flex-pack : center;
+            justify-content : center;
+            -webkit-box-align:center;
+            -webkit-align-items:center;
+            -ms-flex-align:center;
+            align-items:center;
+            -webkit-box-orient : vertical;
+            -webkit-box-direction : normal;
+            -webkit-flex-direction : column;
+            -ms-flex-direction : column;
+            flex-direction : column;
+            padding-top:100px;
+        }
+        ul {
+            list-style: none;
+        }
+        input {
+            padding : 2px;
+            
+        }
+        h3 {
+            padding-top: 30px;
+            text-align: center;
+            
+        }
+
+    </style>
+    
+</head>
+<body>
+
+
+<div id="container"></div>
+
+<!-- Include JavaScript dependencies -->
+<script type="text/javascript" src="js/scalajs-pouchdb-todo-jsdeps.js"></script>
+<!-- Include Scala.js compiled code -->
+<script type="text/javascript" src="js/scalajs-pouchdb-todo-opt.js"></script>
+<!-- Run JSApp -->
+<script>chandu0101.scalajs.pouchdb.todo.ReactApp().main()</script>
+</body>
+</html>
